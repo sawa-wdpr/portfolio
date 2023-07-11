@@ -1,0 +1,141 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1.6rem;
+}
+
+/* common */
+.section-title {
+  color:#38b48b;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3.2rem;
+  letter-spacing: .2em;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+section:nth-child(2n+3) {
+  background-color: #faffe6;
+}
+
+.about .container, .service .container, .works .container, .skill .container, .contact .container {
+  padding: 72px 24px 36px;
+}
+
+/* Card */
+.card-title {
+  font-size: 2rem;
+}
+
+/* .card-text, .card-link {
+  font-size: 1.6rem;
+} */
+
+/* navbar */
+.navbar-brand img {
+  width: 100%;
+  max-width: 50px;
+}
+
+/* TOP */
+
+.top {
+  background-image: url(../img/top_bg.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.top::before {
+  background: inherit;
+  content: "";
+  filter: blur(3px);
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  bottom: -3px;
+  left: -3px;
+}
+
+.top .container {
+  margin-top: 64px;
+  padding: 96px 24px;
+  z-index: 2;
+}
+.top-title {
+  background-color: rgb(255, 255, 255, 0.7);
+  border-radius: 16px;
+  line-height: 1;
+  margin: auto;
+  padding: 24px;
+  text-align: center;
+}
+
+.title-upper {
+  color: #757575;
+  display: block;
+  font-family: "Amatic SC", cursive;
+  font-size: 4.8rem;
+  margin-bottom: 16px;
+}
+
+.title-lower {
+  color: #38b48b;
+  display: block;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 7.2rem;
+  letter-spacing: 0.25em;
+}
+
+/* ABOUT */
+.about img {
+  width: 100%;
+  max-width: 250px;
+}
+
+.about-text {
+  margin-bottom: 2em;
+  /* font-size: 1.6rem; */
+}
+
+/* service */
+
+/* CONTACT */
+.contact-link {
+  text-decoration: none;
+}
+.contact-link img {
+  width:100%;
+  max-width: 75px;
+}
+
+.contact-link span {
+  display: block;
+}
+
+/* footer */
+footer {
+  background-color: #38b48b;
+  color: #fff;
+  padding: 8px;
+  text-align: center;
+}
+
+/* sp */
+@media screen and (max-width: 767px) {
+  /* TOP */
+  .title-upper {
+    font-size: 2.4rem;
+  }
+
+  .title-lower {
+    font-size: 4rem;
+    letter-spacing: .1em;
+  }
+}
